@@ -1,22 +1,149 @@
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
-#main-menu .nav-bar { list-style:none; margin-top: 40px; }
-#main-menu .nav-bar li { display:inline; padding:0 10px; }
+body,
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+.hero-image {
+  background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image-locations {
+  background-image: url("https://images.unsplash.com/photo-1458872590620-5056e3311cad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+a:hover {
+  cursor: pointer;
+ }
+
+h1 {
+  display: block;
+  font-size: 2.5rem;
+}
+
+h2 {
+  display: block;
+  font-size: 2rem;
+}
+
+button {
+  background-color: #fff; 
+  border: none;
+  color: #44403c;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+#main-menu .nav-bar {
+  display: flex;
+  padding: 40px 40px 40px 40px;
+  justify-content: right;
+  margin: 0px;
+}
+
+#main-menu .nav-bar li {
+  display: inline;
+  padding: 0 10px;
+}
 
 #main-menu .nav-bar li a {
   text-decoration: none;
   padding-left: 25px;
   text-transform: uppercase;
-  color: #333;
-	text-shadow: 1px 1px 1px #ccc;
+  color: #fff;
 }
 
-.nav-bar .nav-button-home a { 
-    background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") 
-    no-repeat 0px -2px transparent; }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  align-self: center;
+  gap: 40px;
+}
 
-.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }
+.card {
+  padding: 20px;
+  max-width: 480px;
+  background: rgba( 255, 255, 255, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
-.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-/* Icons courtesy of Thom : http://pixelb.in/assorted-pixel-perfect-14px-icon-set-286/ */
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  align-self: center;
+  background: #fff;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hero-image-contact {
+  background-image: url("https://images.unsplash.com/photo-1473181488821-2d23949a045a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
